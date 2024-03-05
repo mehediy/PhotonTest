@@ -15,14 +15,19 @@ struct NYCSchoolView: View {
         
         NavigationView {
             
-            List(viewModel.schools) { school in
-                NavigationLink {
-                    SchoolDetail(school: school)
-                } label: {
-                    SchoolRow(school: school)
+            if viewModel.isLoading {
+                ProgressView()
+            } else {
+                List(viewModel.schools) { school in
+                    NavigationLink {
+                        SchoolDetail(school: school)
+                    } label: {
+                        SchoolRow(school: school)
+                    }
                 }
+                .navigationTitle("NYC Schools")
             }
-            .navigationTitle("NYC Schools")
+
         }
         .padding()
         .onAppear {

@@ -46,6 +46,12 @@
 		D958038B2B96B5B500E74CCE /* SchoolViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D958038A2B96B5B500E74CCE /* SchoolViewModel.swift */; };
 		D958038C2B96B5B500E74CCE /* SchoolViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D958038A2B96B5B500E74CCE /* SchoolViewModel.swift */; };
 		D958038D2B96B5B500E74CCE /* SchoolViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D958038A2B96B5B500E74CCE /* SchoolViewModel.swift */; };
+		D958038F2B96BCE700E74CCE /* MockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D958038E2B96BCE700E74CCE /* MockService.swift */; };
+		D95803902B96BCE700E74CCE /* MockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D958038E2B96BCE700E74CCE /* MockService.swift */; };
+		D95803912B96BCE700E74CCE /* MockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D958038E2B96BCE700E74CCE /* MockService.swift */; };
+		D95803942B96BD6400E74CCE /* schools.json in Resources */ = {isa = PBXBuildFile; fileRef = D95803932B96BD6400E74CCE /* schools.json */; };
+		D95803952B96BD6400E74CCE /* schools.json in Resources */ = {isa = PBXBuildFile; fileRef = D95803932B96BD6400E74CCE /* schools.json */; };
+		D95803962B96BD6400E74CCE /* schools.json in Resources */ = {isa = PBXBuildFile; fileRef = D95803932B96BD6400E74CCE /* schools.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +106,8 @@
 		D95803812B96B0BA00E74CCE /* SchoolRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolRow.swift; sourceTree = "<group>"; };
 		D95803852B96B0C500E74CCE /* SchoolDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolDetail.swift; sourceTree = "<group>"; };
 		D958038A2B96B5B500E74CCE /* SchoolViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolViewModel.swift; sourceTree = "<group>"; };
+		D958038E2B96BCE700E74CCE /* MockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockService.swift; sourceTree = "<group>"; };
+		D95803932B96BD6400E74CCE /* schools.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schools.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +158,7 @@
 		D958030B2B96A85600E74CCE /* PhotonTest */ = {
 			isa = PBXGroup;
 			children = (
+				D95803922B96BD4500E74CCE /* MockService */,
 				D95803892B96B58700E74CCE /* ViewModel */,
 				D95803802B96B0A200E74CCE /* View */,
 				D958037B2B96AA1A00E74CCE /* Model */,
@@ -295,6 +304,15 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		D95803922B96BD4500E74CCE /* MockService */ = {
+			isa = PBXGroup;
+			children = (
+				D95803932B96BD6400E74CCE /* schools.json */,
+				D958038E2B96BCE700E74CCE /* MockService.swift */,
+			);
+			path = MockService;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -399,6 +417,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D95803942B96BD6400E74CCE /* schools.json in Resources */,
 				D95803142B96A85700E74CCE /* Preview Assets.xcassets in Resources */,
 				D95803112B96A85700E74CCE /* Assets.xcassets in Resources */,
 			);
@@ -408,6 +427,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D95803952B96BD6400E74CCE /* schools.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,6 +435,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D95803962B96BD6400E74CCE /* schools.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +457,7 @@
 				D958030D2B96A85600E74CCE /* PhotonTestApp.swift in Sources */,
 				D95803702B96A8A800E74CCE /* SessionService.swift in Sources */,
 				D958036E2B96A8A800E74CCE /* UserSessionManager.swift in Sources */,
+				D958038F2B96BCE700E74CCE /* MockService.swift in Sources */,
 				D958037D2B96AA2F00E74CCE /* School.swift in Sources */,
 				D95803692B96A8A800E74CCE /* APIService.swift in Sources */,
 				D958036C2B96A8A800E74CCE /* Router.swift in Sources */,
@@ -463,6 +485,7 @@
 				D958031E2B96A85700E74CCE /* PhotonTestTests.swift in Sources */,
 				D958037E2B96AA2F00E74CCE /* School.swift in Sources */,
 				D95803832B96B0BA00E74CCE /* SchoolRow.swift in Sources */,
+				D95803902B96BCE700E74CCE /* MockService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,6 +495,7 @@
 			files = (
 				D958038D2B96B5B500E74CCE /* SchoolViewModel.swift in Sources */,
 				D95803882B96B0C500E74CCE /* SchoolDetail.swift in Sources */,
+				D95803912B96BCE700E74CCE /* MockService.swift in Sources */,
 				D958032A2B96A85700E74CCE /* PhotonTestUITestsLaunchTests.swift in Sources */,
 				D958037F2B96AA2F00E74CCE /* School.swift in Sources */,
 				D95803842B96B0BA00E74CCE /* SchoolRow.swift in Sources */,
